@@ -1,4 +1,6 @@
 # Django
+see https://www.youtube.com/watch?v=38XWpyEK8IY 
+
 ```bash 
 pip install django==4.2
 pip install djangorestframework
