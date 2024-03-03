@@ -12,3 +12,7 @@ export const createTask = (task) => {
     task.done = false;
     return taskApi.post('tasks/', task)
 }
+
+export const deleteTask = (id) => {
+    return taskApi.delete(`tasks/${id}`)
+}
