@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import {useNavigate, useParams} from "react-router-dom";
 import {useForm} from "react-hook-form";
 import { createTask , deleteTask, getTask, updateTask} from "../api/tasks.api";
+import toast from "react-hot-toast";
 
 const TaskFormPage = () => {
   const {register, handleSubmit, formState: { errors}, setValue} = useForm();
@@ -25,8 +26,10 @@ const TaskFormPage = () => {
     console.log(data);
     if(params.id){
       const res = await updateTask(params.id, data); // call to the api
+      toast.success('Task updated')
     }else{
       const res = await createTask(data); // call to the api
+      toast.success('Task created')
     }
     // console.log(res)
     navigate('/tasks')
@@ -36,6 +39,7 @@ const TaskFormPage = () => {
     const res = confirm("Are you sure?");
     if(res){
       await deleteTask(params.id);
+      toast.success("Task deleted")
       navigate('/tasks')
     }
   }
