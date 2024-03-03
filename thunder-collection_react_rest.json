@@ -1,0 +1,42 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "react_rest",
+    "dateExported": "2024-03-03T02:42:26.243Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3d98470a-1143-4eb3-960e-f291cafd14ef",
+            "colId": "5a4aaa2b-9324-4c49-ac34-c01561f66819",
+            "containerId": "",
+            "name": "tasks",
+            "url": "{{api_url}}/tasks",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-03T02:39:08.001Z",
+            "modified": "2024-03-03T02:40:17.819Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a279325f-a719-4963-ac6f-9a0337310bf9",
+            "colId": "5a4aaa2b-9324-4c49-ac34-c01561f66819",
+            "containerId": "",
+            "name": "tasks",
+            "url": "{{api_url}}/tasks/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T02:40:34.568Z",
+            "modified": "2024-03-03T02:41:16.034Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"un titulo3\",\n    \"description\": \"una descripcion\",\n    \"done\": false\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
