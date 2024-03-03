@@ -47,3 +47,11 @@ npm run dev
 see https://vitejs.dev/
 
 open http://localhost:5173/ 
+
+routers 
+```bash
+npm i react-router-dom 
+npm i react-hot-toast
+npm i react-hook-form
+npm i axios
+```
