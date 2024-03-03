@@ -57,3 +57,7 @@ npm i axios
 ```
 
 install https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+- http://localhost:5173/tasks
+- http://localhost:5173/task_form
+
