@@ -1,16 +1,26 @@
 // import React from 'react'
+import {useNavigate, useParams} from "react-router-dom";
 import {useForm} from "react-hook-form";
-import { createTask } from "../api/tasks.api";
+import { createTask , deleteTask} from "../api/tasks.api";
 
 const TaskFormPage = () => {
   const {register, handleSubmit, formState: { errors}} = useForm();
+  const navigate = useNavigate()
+  const params = useParams()
 
   const onSubmit = handleSubmit(async data =>{
     console.log(data);
     const res = await createTask(data); // call to the api
     console.log(res)
-    // return false;
   })
+
+  const onDelete = async (id)=>{
+    const res = confirm("Are you sure?");
+    if(res){
+      await deleteTask(params.id);
+      navigate('/tasks')
+    }
+  }
 
   return (
     <div>
@@ -22,6 +32,8 @@ const TaskFormPage = () => {
         {errors.description && <span>Ocurrio un error</span>}
         
         <button>Save</button>
+
+        {params.id && <button onClick={(e)=>onDelete(params.id)}>Delete</button> }
       </form>
 
     </div>
