@@ -1,8 +1,13 @@
 pip install django==4.2
 pip install djangorestframework
 pip install django-cors-headers
+pip install coreapi
+pip install coreapi-cli
 
 see https://pypi.org/project/django-cors-headers/ 
+see https://pypi.org/project/django-coreapi/ 
+    Core API helpers for Django and Django Rest Framework
+
 
 django-admin startproject myreactrest .
 django-admin startapp tasks 

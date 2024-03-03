@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     "rest_framework",
     # cors
     "corsheaders", 
+    # coreapi
+    "coreapi",
 ]
 
 MIDDLEWARE = [
@@ -140,3 +142,7 @@ CORS_ALLOWED_ORIGINS = [
     # "http://127.0.0.1:3000",
     # "http://127.0.0.1:5000",
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
+}
