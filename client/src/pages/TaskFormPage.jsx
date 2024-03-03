@@ -1,12 +1,14 @@
 // import React from 'react'
 import {useForm} from "react-hook-form";
+import { createTask } from "../api/tasks.api";
 
 const TaskFormPage = () => {
   const {register, handleSubmit, formState: { errors}} = useForm();
 
-  const onSubmit = handleSubmit( data =>{
-    console.log(errors);
+  const onSubmit = handleSubmit(async data =>{
     console.log(data);
+    const res = await createTask(data); // call to the api
+    console.log(res)
     // return false;
   })
 

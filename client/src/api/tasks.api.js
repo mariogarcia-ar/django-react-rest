@@ -7,3 +7,8 @@ const taskApi = axios.create({
 export const getAllTasks = () => {
     return taskApi.get('tasks')
 }
+
+export const createTask = (task) => {
+    task.done = false;
+    return taskApi.post('tasks/', task)
+}
