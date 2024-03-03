@@ -32,7 +32,7 @@ vscode: select the python version for anaconda
 - now create api.py for the viewsets
 - now create the routers
 - now http://127.0.0.1:8000/ response 
-- http://127.0.0.1:8000/api/taskss/ Allow to create new taskss
+- http://127.0.0.1:8000/api/tasks/ Allow to create new taskss
 
 deploy on render.com https://render.com/pricing#compute 
 
