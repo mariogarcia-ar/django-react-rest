@@ -55,3 +55,5 @@ npm i react-hot-toast
 npm i react-hook-form
 npm i axios
 ```
+
+install https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
