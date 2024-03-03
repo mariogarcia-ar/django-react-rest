@@ -7,6 +7,7 @@ see https://pypi.org/project/django-cors-headers/
 django-admin startproject myreactrest .
 django-admin startapp tasks 
 
+python manage.py makemigrations
 python manage.py migrate
 
 python manage.py createsuperuser
